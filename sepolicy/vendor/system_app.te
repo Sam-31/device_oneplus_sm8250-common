@@ -3,4 +3,6 @@ allow system_app hal_power_default:binder call;
 allow system_app hal_vibrator_default:binder call;
 allow system_app sysfs_zram:dir search;
 
+allow system_app default_android_service:service_manager { find };
+
 allow system_app sysfs_dm:file rw_file_perms;
